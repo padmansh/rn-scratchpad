@@ -43,7 +43,7 @@ const ActionScreen = ({ route, navigation }) => {
 
   const renderSelectedList = useCallback(
     (fn, index) => (
-      <View style={{ flexDirection: "row", flex: 1 }}>
+      <View key={index} style={{ flexDirection: "row", flex: 1 }}>
         <View style={styles.selectedList}>
           <Text>{fn?.label}</Text>
         </View>
