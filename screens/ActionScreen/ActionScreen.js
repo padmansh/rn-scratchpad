@@ -60,8 +60,8 @@ const ActionScreen = ({ route, navigation }) => {
 
   return (
     <ScreenWrapper>
-      <TouchableOpacity onPress={() => navigation.goBack()}>
-        <Text style={styles.back}>Back</Text>
+      <TouchableOpacity style={styles.back} onPress={() => navigation.goBack()}>
+        <Text>Back</Text>
       </TouchableOpacity>
       <View style={{ flex: 1, gap: 16, flexDirection: "row" }}>
         <ScrollView style={styles.scrollContainer}>
